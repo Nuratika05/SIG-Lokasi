@@ -34,9 +34,32 @@
           integrity="sha512-aEe/ZxePawj0+G2R+AaIxgrQuKT68I28qh+wgLrcAJOz3rxCP+TwrK5SPN+E5I+1IQjNtcfvb96HDagwrKRdBw=="
           crossorigin="anonymous"/>
 
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!--Routing Machine Liedman   -->
+    <link rel="stylesheet" href="{{URL::asset('leaflet-routing-machine\dist\leaflet-routing-machine.css')}}" />
+    <!--link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" /-->
+    <script src="{{asset('leaflet-routing-machine\dist\leaflet-routing-machine.js')}}"></script>
+    <script src="{{asset('leaflet-routing-machine\examples\Control.Geocoder.js')}}"></script>
+
+    <!-- heat map -->
+    <script src="{{asset('heat-map\Leaflet.heat-gh-pages\dist\leaflet-heat.js')}}"></script>
+
+    <!--plugin search marker-->
+    <script src="{{asset('leaflet-search/src/leaflet-search.js')}}"></script>
+    <link rel="stylesheet" href="{{URL::asset('leaflet-search/src/leaflet-search.css')}}"/>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
     @stack('third_party_stylesheets')
 
     @stack('page_css')
+
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -138,7 +161,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
         integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
         crossorigin="anonymous"></script>
-        
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.3/bootstrapSwitch.min.js"
         integrity="sha512-DAc/LqVY2liDbikmJwUS1MSE3pIH0DFprKHZKPcJC7e3TtAOzT55gEMTleegwyuIWgCfOPOM8eLbbvFaG9F/cA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
